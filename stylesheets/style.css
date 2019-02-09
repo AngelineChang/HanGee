@@ -1,0 +1,318 @@
+/*Text Style*/
+body {
+  font-family: "Noto Sans TC",sans-serif;
+  background: url("#");
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  font-size: 48px;
+  color: #000000;
+}
+
+.h2 {
+  font-size: 32px;
+  color: #355079;
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #000000;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* Link style */
+.link {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ /* Layout*/
+ /* All pages */
+ main {
+   display: flex;
+   flex-direction: column;
+   margin: 0px 20% 0px 20%;
+ }
+ header {
+   display: flex;
+   justify-content: center;
+ }
+ #navbar {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 0px 10% 0px 10%;
+ }
+
+#nav-brand {
+  display: flex;
+}
+
+ #nav-item {
+   display: flex;
+ }
+
+ nav ul li {
+   margin-right: 50px;
+ }
+
+ .box {
+   margin: 0 20px 0 20px;
+   border-style: solid;
+   border-width: 1px;
+ }
+
+ footer {
+   display: flex;
+   justify-content: center;
+ }
+
+ /* Homepage*/
+#work-intro {
+  display: flex;
+  justify-content: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#hangee-intro {
+  display: flex;
+  justify-content: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#team-intro {
+  display: flex;
+  justify-content: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* Team Intro*/
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#member-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#row-01 {
+  display: flex;
+}
+
+#row-02 {
+  display: flex;
+}
+
+.individual {
+
+}
+
+/* Work Intro*/
+#concept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#hangee {
+  display: flex;
+  justify-content: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* Aurora */
+#aurora-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+/* Aurora 01*/
+#aurora-sing-container {
+  display: flex;
+  justify-content: center;
+  border-color: #4A4A4A;
+  border-style: solid;
+  border-width: 1px;
+}
+/*
+.larger-image{
+  background-color: green;
+  background-color: rgba(45, 45, 45, 0.1);
+  background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+  width: 500px;
+  border-color: red;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-radius: 50%; //round
+}
+
+<form id="cat-photo-form" action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label><br>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
+An element's padding controls the amount of space between the element's content and its border.
+An element's margin controls the amount of space between an element's border and surrounding elements.
+If you set an element's margin to a negative value, the element will grow larger.
+
+
+.blue-box {}
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  //Clockwise Notation:
+  //padding: top right bottom left;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  //Clockwise Notation:
+  //margin: top right bottom left;
+  //px or em
+}
+
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
+
+Override: !important > inline style > id > css declaration sequence
+
+//CSS Variable 應用在media query做responsive的時候
+:root { //cascading
+  --penguin-skin: gray;
+  --penguin-belly: pink;
+  --penguin-beak: orange;
+}
+ .penguin-top {
+   background: var(--penguin-skin, black);
+ }
+
+ text-align: justify; causes all lines of text except the last line to meet the left and right edges of the line box.
+ text-align: center; centers the text
+ text-align: right; right-aligns the text
+ text-align: left; (the default) left-aligns the text.
+ font-weight: bold;
+ text-decoration: underline;
+ text-decoration: line-through;
+ font-style: italic;
+ text-transform: uppercase;
+ line-height: 20px;
+ box-shadow: offset-x, offset-y, blur-radius, spread-radius and color value;
+    The blur-radius and spread-radius values are optional.
+ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ opacity: 0.7;
+ A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
+
+CSS Box Model: Normal Flow
+block element?(header,p) inline element?(pictures)
+set inline element to block item:
+display: block;
+position: relative/absolute/fixed
+float: left;
+z-index: 99999//layer
+margin: auto;
+
+
+//transform
+transform: scale(2);
+transform: skewX(-32deg);
+
+@media (max-width: 100px) {
+  img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  }
+  //viewport units:
+  vw: 10vw would be 10% of the viewport's width.
+  vh: 3vh would be 3% of the viewport's height.
+  vmin: 70vmin would be 70% of the viewport's smaller dimension (height vs. width).
+  vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width).
+}
+To make your images appear "retina", define their width and height values as only half of what the original file is.
+
+//flex
+display: flex;
+flex-direction: row/column/row-reverse/column-reverse;
+justify-content: center/flex-start/flex-end/space-between/space-around;
+align-items: center/flex-start/flex-end/stretch/baseline;
+flex-wrap: nowrap/wrap/wrap-reverse;
+flex: 1 1 auto/150px; (flex-shrink/flex-grow/flex-basis)
+order: 1;
+
+//grid
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: auto 50px 10% 2fr 1fr;
+*/
