@@ -63,6 +63,14 @@ body {
   margin: 0 0.5vw 0 0.5vw;
 }
 
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
  /* Layout*/
  /* All pages */
  main {
