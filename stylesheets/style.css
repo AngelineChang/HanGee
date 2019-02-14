@@ -4,7 +4,7 @@ body {
   background: url("#");
   display: flex;
   flex-direction: column;
-  background-image: url(../img/bg.png);
+  background-image: url(.../img/bg.png);
   background-size: cover;
   background-color: #385A8D;
   margin: 0;
