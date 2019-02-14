@@ -1,7 +1,6 @@
 /*Text Style*/
 body {
   font-family: "Noto Sans TC", sans-serif;
-  background: url("#");
   display: flex;
   flex-direction: column;
   background-image: url("../img/bg.png");
@@ -21,6 +20,7 @@ body {
   line-height: 1em;
   padding: 0;
   text-align: center;
+  margin-top: 2vh;
 }
 
 .h3 {
@@ -39,20 +39,28 @@ body {
   color: #000000;
 }
 
-.btn {
+.btn-text {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
 }
 /* Link style */
-.link {
+.link:hover {
   text-decoration: none;
   opacity: 0.5;
 }
 
-a:hover {
-  opacity: 0.5;
+.btn {
+  background-image: url("../img/btn-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding: 2.5vh 3.5vw 2.5vh 3.5vw;
+  margin: 0 0.5vw 0 0.5vw;
 }
 
  /* Layout*/
@@ -60,7 +68,7 @@ a:hover {
  main {
    display: flex;
    flex-direction: column;
-   margin: 0px 20% 0px 20%;
+   margin: 0px 10% 0px 10%;
    background-color: rgba(255, 255, 255, 0.5);
    margin-bottom: 7%;
  }
@@ -102,8 +110,6 @@ a:hover {
 
  .box {
    margin: 0 20px 0 20px;
-   border-style: solid;
-   border-width: 1px;
  }
 
  footer {
@@ -126,27 +132,72 @@ a:hover {
  /* Homepage*/
 #work-intro {
   display: flex;
-  justify-content: center;
-  border-color: #4A4A4A;
-  border-style: solid;
-  border-width: 1px;
+  flex-direction: column;
+  align-items: center;
   background-image: url("../img/hp-work-intro.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 80vh;
+}
+
+.hp-p {
+  width: 20vw;
+  line-height: 1.7em;
+  margin: 0 0 3vw 0;
 }
 
 #hangee-intro {
   display: flex;
   justify-content: center;
-  border-color: #4A4A4A;
-  border-style: solid;
-  border-width: 1px;
+  align-items: center;
+  height: 57vh;
+}
+#hangee-intro-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height: 40vh;
+}
+
+#hangee-intro-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 40vw;
+  height: 40vh;
+}
+
+.crop-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
 }
 
 #team-intro {
   display: flex;
   justify-content: center;
-  border-color: #4A4A4A;
-  border-style: solid;
-  border-width: 1px;
+  align-items: center;
+  height: 57vh;
+}
+
+#team-intro-left {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  overflow: hidden;
+  width: 40vw;
+  height: 40vh;
+}
+
+#team-intro-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height: 40vh;
 }
 
 /* Team Intro*/
