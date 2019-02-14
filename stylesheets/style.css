@@ -4,7 +4,7 @@ body {
   background: url("#");
   display: flex;
   flex-direction: column;
-  background-image: url(/img/bg.png);
+  background-image: url("../img/bg.png");
   background-size: cover;
   background-color: #385A8D;
   margin: 0;
@@ -109,7 +109,7 @@ a:hover {
  footer {
    display: flex;
    justify-content: center;
-   background-image: url(../img/ftr-bg.png);
+   background-image: url("../img/ftr-bg.png");
    background-repeat: no-repeat;
    background-position: bottom;
    background-size: 100% 100%;
@@ -130,7 +130,7 @@ a:hover {
   border-color: #4A4A4A;
   border-style: solid;
   border-width: 1px;
-  background-image: url(../img/hp-work-intro.png);
+  background-image: url("../img/hp-work-intro.png");
 }
 
 #hangee-intro {
