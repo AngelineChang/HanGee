@@ -322,6 +322,11 @@ body {
   margin: 20px 0 50px 0;
 }
 
+#hangee-right p {
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
 #hangee-right img {
   margin: 0 5px;
 }
@@ -376,3 +381,4 @@ body {
   margin-bottom: 50px;
   align-self: flex-start;
 }
+
