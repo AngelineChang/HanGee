@@ -1,6 +1,6 @@
 console.log("io here ok");
 
-const socket = io.connect('http://192.168.0.103:4567');
+const socket = io.connect('//192.168.0.103:4567');
 
 
 socket.on('screen', function (message) {
