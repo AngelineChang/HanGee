@@ -358,6 +358,7 @@ body {
 
 .snapshot {
   margin: 14px 14px;
+  width: 300px;
 }
 
 #search {
