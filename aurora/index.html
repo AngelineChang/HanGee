@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="../stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
   </head>
   <body>
+  <script src="imgControl.js"></script>
     <!-- Navigation -->
     <nav>
       <div id="navbar">
@@ -41,21 +44,8 @@
         </section>
         <!--Aurora Pictures-->
         <section id="aurora-pics">
-          <a href="01.html" class="link"><img class="snapshot" src="" id="0" ></a> <!--../img/aurora-fullPic.png-->
-          <a href="#" class="link"><img class="snapshot" src="" id="1"></a>
-          <a href="#" class="link"><img class="snapshot" src="" id="2"></a><br>
-          <a href="#" class="link"><img class="snapshot" src="" id="3"></a>
-          <a href="#" class="link"><img class="snapshot" src="" id="4"></a>
-          <a href="#" class="link"><img class="snapshot" src="" id="5"></a><br>
-          <a href="#" class="link"><img class="snapshot" src="" id="6"></a>
-          <a href="#" class="link"><img class="snapshot" src=""></a>
-          <a href="#" class="link"><img class="snapshot" src=""></a><br>
-          <a href="#" class="link"><img class="snapshot" src=""></a>
-          <a href="#" class="link"><img class="snapshot" src=""></a>
-          <a href="#" class="link"><img class="snapshot" src=""></a><br>
-          <a href="#" class="link"><img class="snapshot" src=""></a>
-          <a href="#" class="link"><img class="snapshot" src=""></a>
-          <a href="#" class="link"><img class="snapshot" src=""></a><br>
+          <!--<a href="#" class="link"><img class="snapshot" src="" id="1"></a>-->
+
         </section>
         <section id="load-btn">
           <button class="btn-text btn" type="button" name="button">載入更多</button>
@@ -74,6 +64,5 @@
           <a class="social-links link" href="#">Line貼圖</a>
         </div>
     </footer>
-    <script src="../javascripts/index.js"></script>
   </body>
 </html>
