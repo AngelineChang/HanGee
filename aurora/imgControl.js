@@ -1,7 +1,7 @@
 console.log("io here ok");
 
 const socket = io.connect('https://192.168.0.103:443', {
-    transports: ['websocket'],
+//     transports: ['websocket'],
     rejectUnauthorized: false
 });
 
