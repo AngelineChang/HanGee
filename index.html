@@ -1,43 +1,60 @@
 <!DOCTYPE html>
+<html xmlns:og='http://ogp.me/ns#'>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta charset="utf-8">
+    <link rel="icon" href="img/logo.png">
+    <meta content="「寒吉」誕生於第十屆政大數位內容與科技學程畢業製作，
+    將在2019年5月於政大數位藝術中心展出。這是一個以極地為原型的原創世界，觀展者可以決定用什麼方式面對未知，
+    而世界會依據觀展者的所為來給予不同的回饋。如果不主動嘗試與新事物互動，也將無法得到更多的反饋以及故事......" name="description"><!--Fill-->
+    <meta content="「寒吉」誕生於第十屆政大數位內容與科技學程畢業製作，
+    將在2019年5月於政大數位藝術中心展出。這是一個以極地為原型的原創世界，觀展者可以決定用什麼方式面對未知，
+    而世界會依據觀展者的所為來給予不同的回饋。如果不主動嘗試與新事物互動，也將無法得到更多的反饋以及故事......" property="og:description"><!--Fill-->
+    <meta content="HanGee - 政大數位內容與科技學程第10屆畢展" property="og:title">
+    <meta content="HanGee - 政大數位內容與科技學程第10屆畢展" property="og:site_name"><!--Fill-->
+    <meta content="img/logo-hangee.png" property="og:image"><!--Fill-->
     <title>HanGee - 政大數位內容與科技學程第10屆畢展</title>
     <link rel="stylesheet" href="stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
   </head>
   <body>
-    <script src="javascripts/index.js"></script>
       <!-- Navigation -->
+      <div class="nav-parent">
         <nav>
-          <div id="navbar">
-            <div id="nav-brand">
-              <!-- <div id="nav-logo"><a href="index.html"><img src="#" alt="Hangee Logo" class="logo"></a></div> -->
-              <div id="nav-hangee"><a class="link" href="https://angelinechang.github.io/HanGee/"><img src="img/logo.png" alt="logo"></a></div>
+          <div id="nav-bar">
+            <div id="nav-left">
+              <a href="index.html" class="link">
+                <div id="nav-logo">
+                  <img src="img/logo.png" alt="logo">
+                  <img src="img/logo-word.png" id="logo-word" style="margin-left: 7px;" alt="logo">
+                </div>
+              </a>
             </div>
-            <ul>
-              <div id="nav-item">
-                <li><a href="aurora/index.html" class="h3 link" style="text-decoration:none">極光畫作</a></li>
-                <li><a href="work-intro/index.html" class="h3 link" style="text-decoration:none">作品介紹</a></li>
-                <li><a href="team-intro/index.html" class="h3 link" style="text-decoration:none">團隊介紹</a></li>
-              </div>
-            </ul>
+            <div id="nav-right">
+              <ul>
+                <li><a href="aurora/index.html" class="nav-text link">極光畫作</a></li>
+                <li><a href="work-intro/index.html" class="nav-text link">作品介紹</a></li>
+                <li><a href="team-intro/index.html" class="nav-text link">團隊介紹</a></li>
+              </ul>
+            </div>
           </div>
-      </nav>
+        </nav>
+      </div>
       <!-- Starry Night Sky Header-->
       <header>
-        <h1 class="h1">寒吉 HanGee</h1>
+        <h1>寒吉 HanGee</h1>
       </header>
       <!-- Main Content of the page-->
       <main>
         <!-- Introduction of the work -->
         <section id="work-intro">
-            <h2 class="h2 h2-underline" style="margin-top: 10vh;">作品簡介</h2>
-            <p class="p hp-p">「寒吉」誕生於第十屆政大數位內容與科技學程畢業製作，<br>
-              將在2019年5月於政大達賢圖書館展出。<br><br>
+            <h2 class="h2-underline" style="margin-top: 10vh;">作品簡介</h2>
+            <p>「寒吉」誕生於第十屆政大數位內容與科技學程畢業製作，
+              將在2019年5月於政大數位藝術中心展出。<br><br>
               這是一個以極地為原型的原創世界，觀展者可以決定用什麼方式面對未知，
               而世界會依據觀展者的所為來給予不同的回饋。如果不主動嘗試與新事物互動，也將無法得到更多的反饋以及故事......</p>
             <a href="work-intro/index.html"><button class="btn-text btn" type="button" name="button">看更多</button></a>
@@ -45,26 +62,26 @@
         <!-- Introduction of the character HanGee-->
         <section id="hangee-intro">
           <div id="hangee-intro-left" class="box">
-            <h2 class="h2 h2-underline">角色簡介</h2>
-            <p class="p hp-p">原創世界中，有著皚白色身軀，討人喜愛的軟爛生物，他的名字叫做「寒吉」。他代表著現實社會裡被建構的外在事物，
-              和觀展者進行互動。而行動緩慢、悠閒自如的寒吉有什麼力量呢？來和寒吉互動，尋找自己的極光吧！</p>
-            <div>
+            <h2 class="h2-underline">角色簡介</h2>
+            <p>原創世界中，有著皚白色身軀，討人喜愛的軟爛生物，他的名字叫做「寒吉」。他代表著現實社會裡被建構的外在事物，
+              和觀展者進行互動。<br><br>
+              而行動緩慢、悠閒自如的寒吉有什麼力量呢？來和寒吉互動，尋找自己的極光吧！</p>
+            <div id="hangee-intro-btn">
               <a href="work-intro/index.html"><button class="btn-text btn" type="button" name="button">看更多</button></a>
-              <a href="#"><button class="btn-text btn" type="button" name="button">下載寒吉貼圖</button></a>
+              <a href="https://line.me/S/sticker/7286517" target="_blank" ><button class="btn-text btn" type="button" name="button">下載寒吉貼圖</button></a>
             </div>
           </div>
           <div id="hangee-intro-right" class="box">
-            <img src="img/hp-hangee-intro.png" class="crop-image" alt="寒吉本人">
           </div>
         </section>
         <!-- Introduction of the team-->
         <section id="team-intro">
           <div id="team-intro-left" class="box">
-            <img src="img/hp-team-intro.png" class="crop-image" alt="團隊圖片">
+            <!-- <img src="img/hp-team-intro.png" alt="團隊圖片"> -->
           </div>
           <div id="team-intro-right" class="box">
-            <h2 class="h2 h2-underline">團隊簡介</h2>
-            <p class="p hp-p">來自於政大不同專業學科的七位成員，是打造寒吉世界的幕後推手。
+            <h2 class="h2-underline">團隊簡介</h2>
+            <p>來自於政大不同專業學科的七位成員，是打造寒吉世界的幕後推手。
               在即將畢業的時節，透過寒吉來找尋心中某個美麗的理想，每一次相聚的時刻，都激盪更多想法，挑戰各種可能！</p>
             <a href="team-intro/index.html"><button class="btn-text btn" type="button" name="button">看更多</button></a>
           </div>
@@ -73,16 +90,15 @@
 
       <!-- Footer-->
       <footer>
-        <div id="footer-container">
-          <h2>展 覽 資 訊</h3>
-          <p>國立政治大學數位內容與科技學程第十屆畢展<br>
-            展期：2019/6/3 ~ 6/6<br>
-            地點：政治大學達賢圖書館2F<br></p>
-            <a class="social-links link" target="_blank" href="#"><img src="img/facebook.png" style="width: 32px; height: 32px;" alt="facebook icon"></a>
-            <a class="social-links link" target="_blank" href="https://medium.com/@nccudcthangee"><img src="img/medium.png" style="width: 32px; height: 28px;" alt="medium icon"></a>
-            <a class="social-links link" href="#">Line貼圖</a>
-          </div>
+          <div class="footer-title">展 覽 資 訊</div>
+          <div class="footer-text">國立政治大學數位內容與科技學程第十屆畢展<br>
+            展期：2019/5/31 ~ 6/4<br>
+            地點：政治大學數位藝術中心（藝文中心2F）<br></div>
+            <a class="link" target="_blank" href="https://www.facebook.com/NCCUDCT10th/"><img src="img/facebook.png" class="social-links" alt="facebook icon"></a>
+            <a class="link" target="_blank" href="https://medium.com/@nccudcthangee"><img src="img/medium.png" class="social-links" alt="medium icon"></a>
+            <a class="link" target="_blank" href="https://line.me/S/sticker/7286517"><img src="img/line.png" class="social-links" alt="line icon"></a>
       </footer>
+      <script src="aurora/index.js"></script>
   </body>
 </html>
 
