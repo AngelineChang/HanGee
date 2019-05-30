@@ -55,7 +55,7 @@
         </div>
         <div id="aurora-sing-below" class="box">
             <button class="btn-text btn" type="button" name="button" onclick="downloadImage()">下載圖片</button>
-            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u= + encodeURIComponent(location.href)+ &src=sdkpreparse" class="fb-xfbml-parse-ignore"><button class="btn-text btn" type="button" name="button">分享至Facebook</button></a>
+            <a target="_blank" id="fb-link-1" href="" class="fb-xfbml-parse-ignore"><button class="btn-text btn" type="button" name="button">分享至Facebook</button></a>
         </div>
       </div>
 
@@ -96,7 +96,7 @@
 
     function downloadImage(){
       storageRef.child(`images/1.png`).getDownloadURL().then(function(url) {//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-console.log("button clicked");
+      console.log("button clicked");
       var xhr = new XMLHttpRequest();
         xhr.responseType = 'blob';
         xhr.onload = function(event) {
@@ -109,5 +109,9 @@ console.log("button clicked");
       });
 
     }
+
+    var fbLink = document.getElementById('fb-link-1');//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    fbLink.href = "https://www.facebook.com/sharer/sharer.php?u=" +location.href + "&src=sdkpreparse";
+    
   </script>
 </html>
