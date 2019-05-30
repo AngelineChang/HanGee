@@ -1,35 +1,51 @@
 <!DOCTYPE html>
+<html xmlns:og='http://ogp.me/ns#'>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="../img/logo.png">
+    <meta content=" " name="description"><!--Fill-->
+    <meta content=" " property="og:description"><!--Fill-->
+    <meta content="極光畫作 - HanGee" property="og:title">
+    <meta content="極光畫作 - HanGee" property="og:site_name"><!--Fill-->
+    <meta content="../img/logo-hangee.png" property="og:image"><!--Fill-->
     <title>極光畫作 - HanGee</title>
     <link rel="stylesheet" href="../stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
   </head>
   <body>
-  <script src="imgControl.js"></script>
+  <!-- <script src="imgControl.js"></script> -->
     <!-- Navigation -->
-    <nav>
-      <div id="navbar">
-        <div id="nav-brand">
-          <!-- <div id="nav-logo"><a href="../index.html"><img src="#" alt="Hangee Logo" class="logo"></a></div> -->
-          <div id="nav-hangee"><a class="link" href="../index.html"><img src="../img/logo.png" alt="logo"></a></div>
-        </div>
-        <ul>
-          <div id="nav-item">
-            <li><a href="../aurora/index.html" class="h3 link" style="text-decoration:none">極光畫作</a></li>
-            <li><a href="../work-intro/index.html" class="h3 link" style="text-decoration:none">作品介紹</a></li>
-            <li><a href="../team-intro/index.html" class="h3 link" style="text-decoration:none">團隊介紹</a></li>
+    <div class="nav-parent">
+      <nav>
+        <div id="nav-bar">
+          <div id="nav-left">
+            <a href="../index.html" class="link">
+              <div id="nav-logo">
+                <img src="../img/logo.png" alt="logo">
+                <img src="../img/logo-word.png" id="logo-word" style="margin-left: 7px;" alt="logo">
+              </div>
+            </a>
           </div>
-      </ul>
-      </div>
-    </nav>
+          <div id="nav-right">
+            <ul>
+              <li><a href="../aurora/index.html" class="nav-text link">極光畫作</a></li>
+              <li><a href="../work-intro/index.html" class="nav-text link">作品介紹</a></li>
+              <li><a href="../team-intro/index.html" class="nav-text link">團隊介紹</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
     <!--Page Header-->
     <header>
-      <h1 class="h1">極光畫作</h1>
+      <h1>極光畫作</h1>
     </header>
     <!-- Main Content of the page-->
     <main>
@@ -44,7 +60,26 @@
         </section>
         <!--Aurora Pictures-->
         <section id="aurora-pics">
-          <!--<a href="#" class="link"><img class="snapshot" src="" id="1"></a>-->
+          <!-- <div class="snapshot">
+            <a href="1.html" class="link"><img src="../10.png" id="1"></a>
+            <a href="1.html" class="link snapshot-title">1</a>
+          </div>
+          <div class="snapshot">
+            <a href="#" class="link"><img src="../10.png" id="2"></a>
+            <a href="#" class="link snapshot-title">2</a>
+          </div>
+          <div class="snapshot">
+            <a href="#" class="link"><img src="../10.png" id="3"></a>
+            <a href="#" class="link snapshot-title">3</a>
+          </div>
+          <div class="snapshot">
+            <a href="#" class="link"><img src="../10.png" id="4"></a>
+            <a href="#" class="link snapshot-title">4</a>
+          </div>
+          <div class="snapshot">
+            <a href="#" class="link"><img src="../10.png" id="5"></a>
+            <a href="#" class="link snapshot-title">5</a> -->
+          </div>
 
         </section>
         <section id="load-btn">
@@ -54,15 +89,56 @@
     </div>
     <!-- Footer-->
     <footer>
-      <div id="footer-container">
-        <h2>展 覽 資 訊</h3>
-        <p>國立政治大學數位內容與科技學程第十屆畢展<br>
-          展期：2019/6/3 ~ 6/6<br>
-          地點：政治大學達賢圖書館2F<br></p>
-          <a class="social-links link" href="#"><img src="../img/facebook.png" style="width: 32px; height: 32px;" alt="facebook icon"></a>
-          <a class="social-links link" target="_blank" href="https://medium.com/@nccudcthangee"><img src="../img/medium.png" style="width: 32px; height: 28px;" alt="medium icon"></a>
-          <a class="social-links link" href="#">Line貼圖</a>
-        </div>
+        <div class="footer-title">展 覽 資 訊</div>
+        <div class="footer-text">國立政治大學數位內容與科技學程第十屆畢展<br>
+          展期：2019/5/31 ~ 6/4<br>
+          地點：政治大學數位藝術中心（藝文中心2F）<br></div>
+          <a class="link" target="_blank" href="https://www.facebook.com/NCCUDCT10th/"><img src="../img/facebook.png" class="social-links" alt="facebook icon"></a>
+          <a class="link" target="_blank" href="https://medium.com/@nccudcthangee"><img src="../img/medium.png" class="social-links" alt="medium icon"></a>
+          <a class="link" target="_blank" href="https://line.me/S/sticker/7286517"><img src="../img/line.png" class="social-links" alt="line icon"></a>
     </footer>
   </body>
+  <script type="text/javascript">
+  // Initialize Firebase
+  let config = {
+      apiKey: "AIzaSyAMCffs46RTuWXisNsJbEiJuthCrr6XRZs",
+      authDomain: "hangee-test.firebaseapp.com",
+      databaseURL: "https://hangee-test.firebaseio.com",
+      projectId: "hangee-test",
+      storageBucket: "hangee-test.appspot.com",
+      messagingSenderId: "45255808411"
+  };
+  firebase.initializeApp(config);
+
+  $(document).ready(function(){
+      //Create a root reference
+      let imgNum = 200;
+      let counter = 0;
+      let storageRef = firebase.storage().ref();
+      for (var i = 0; i < imgNum; i++) {
+        console.log(counter);
+        downloadURL(counter);
+        counter++;
+      }
+
+      function downloadURL(counter) {
+        storageRef.child(`images/${counter}.png`).getDownloadURL().then(function(url) {
+            console.log(`${counter} / 找到檔案: ${counter}.png / ${url}`);
+            $( "#aurora-pics" ).append(
+              '<div class="snapshot"><a href="' + counter + '.html" class="link"><img src="' + url + ' id="' + counter +'"></a><a href="' + counter + '.html" class="link snapshot-title">' + counter + '</a></div>'
+            );
+            console.log(`append ${counter}.png`);
+        }).catch(function(error) {
+            console.log(`${counter}.png error`);
+        });
+      }
+
+
+      // let imgRef = storageRef.child(`images/${counter}.png`);
+
+
+  });
+
+
+  </script>
 </html>
