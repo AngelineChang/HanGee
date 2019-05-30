@@ -1,105 +1,129 @@
 <!DOCTYPE html>
+<html xmlns:og='http://ogp.me/ns#'>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="../img/logo.png">
+    <meta content="來自於政大不同專業學科的七位成員，是打造寒吉世界的幕後推手。在即將畢業的時節，
+    透過寒吉來找尋心中某個美麗的理想，每一次相聚的時刻，都激盪更多想法，挑戰各種可能！
+    團隊組成以「集結不同專業能力的角色」為初衷，期許探索更多的人生樣貌。" name="description"><!--Fill-->
+    <meta content="來自於政大不同專業學科的七位成員，是打造寒吉世界的幕後推手。在即將畢業的時節，
+    透過寒吉來找尋心中某個美麗的理想，每一次相聚的時刻，都激盪更多想法，挑戰各種可能！
+    團隊組成以「集結不同專業能力的角色」為初衷，期許探索更多的人生樣貌。" property="og:description"><!--Fill-->
+    <meta content="團隊介紹 - HanGee" property="og:title">
+    <meta content="團隊介紹 - HanGee" property="og:site_name"><!--Fill-->
+    <meta content="../img/logo-hangee.png" property="og:image"><!--Fill-->
     <title>團隊介紹 - HanGee</title>
     <link rel="stylesheet" href="../stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navigation -->
-    <nav>
-      <div id="navbar">
-        <div id="nav-brand">
-          <!-- <div id="nav-logo"><a href="../index.html"><img src="#" alt="Hangee Logo" class="logo"></a></div> -->
-          <div id="nav-hangee"><a class="link" href="../index.html"><img src="../img/logo.png" alt="logo"></a></div>
-        </div>
-        <ul>
-          <div id="nav-item">
-            <li><a href="../aurora/index.html" class="h3 link" style="text-decoration:none">極光畫作</a></li>
-            <li><a href="../work-intro/index.html" class="h3 link" style="text-decoration:none">作品介紹</a></li>
-            <li><a href="../team-intro/index.html" class="h3 link" style="text-decoration:none">團隊介紹</a></li>
+    <div class="nav-parent">
+      <nav>
+        <div id="nav-bar">
+          <div id="nav-left">
+            <a href="../index.html" class="link">
+              <div id="nav-logo">
+                <img src="../img/logo.png" alt="logo">
+                <img src="../img/logo-word.png"id="logo-word" style="margin-left: 7px;" alt="logo">
+              </div>
+            </a>
           </div>
-      </ul>
-      </div>
-    </nav>
+          <div id="nav-right">
+            <ul>
+              <li><a href="../aurora/index.html" class="nav-text link">極光畫作</a></li>
+              <li><a href="../work-intro/index.html" class="nav-text link">作品介紹</a></li>
+              <li><a href="../team-intro/index.html" class="nav-text link">團隊介紹</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
     <!--Page Header-->
     <header>
-      <h1 class="h1">團隊介紹</h1>
+      <h1>團隊介紹</h1>
     </header>
     <!-- Main Content of the page-->
     <main>
       <!--Intro of the Team-->
       <section id="team">
-        <img src="../img/team-team-intro.png" alt="團隊圖片">
-        <h2 class="h2 h2-underline">軟爛生物團隊</h2>
-        <p class="p">來自於政大不同專業學科的七位成員，是打造寒吉世界的幕後推手。在即將畢業的時節，
-          透過寒吉來找尋心中某個美麗的理想，每一次相聚的時刻，都激盪更多想法，挑戰各種可能！
-          團隊組成以「集結不同專業能力的角色」為初衷，期許探索更多的人生樣貌。
-          因此七位成員正是來自於政大不同專業學科的人們：</p>
+        <img src="../img/team-intro.png" alt="團隊圖片">
+        <div id="team-intro-detail">
+          <h2 class="h2-underline">軟爛生物團隊</h2>
+          <p>來自於政大不同專業學科的七位成員，是打造寒吉世界的幕後推手。在即將畢業的時節，
+            透過寒吉來找尋心中某個美麗的理想，每一次相聚的時刻，都激盪更多想法，挑戰各種可能！</p>
+          <p>團隊組成以「集結不同專業能力的角色」為初衷，期許探索更多的人生樣貌。
+            因此七位成員正是來自於政大不同專業學科的人們：</p>
+        </div>
       </section>
       <!--Intro of the members of the team-->
       <section id="member-intro">
-        <h2 class="h2 h2-underline">成員介紹</h2>
-        <div id="row-01">
-          <div id="member-01" class="box">
-            <img src="../img/team-Hsiao.png" alt="蕭伊涵">
-            <h3 class="h3">蕭伊涵</h3>
-            <p class="p">技術管理<br>
+        <h2 class="h2-underline">成員介紹</h2>
+        <div id="row-1">
+          <div class="profile-box">
+            <img src="../img/team-Hsiao.png" class="profile-pic" alt="蕭伊涵">
+            <h3>蕭伊涵</h3>
+            <p>影像辨識/技術整合/配樂製作<br>
               不能超帥工作的時候會軟爛</p>
           </div>
-          <div id="member-02" class="box">
-            <img src="../img/team-hsia.png" alt="夏圓">
-            <h3 class="h3">夏圓</h3>
-            <p class="p">動畫製作、視覺規劃<br>
+          <div class="profile-box">
+            <img src="../img/team-hsia.png" class="profile-pic" alt="夏圓">
+            <h3>夏圓</h3>
+            <p>劇情設計、動畫製作<br>
               要打開電腦的時候會軟爛</p>
           </div>
-          <div id="member-03" class="box">
-            <img src="../img/team-chang.png" alt="張育綺">
-            <h3 class="h3">張育綺</h3>
-            <p class="p">網頁程式設計<br>
+          <div class="profile-box">
+            <img src="../img/team-chang.png" class="profile-pic" alt="張育綺">
+            <h3>張育綺</h3>
+            <p>網頁設計與全端<br>
               天氣很冷的時候會軟爛</p>
           </div>
         </div>
-        <div id="row-02">
-          <div id="member-04" class="box">
-            <img src="../img/team-cheng.png" alt="鄭致彥">
-            <h3 class="h3">鄭致彥</h3>
-            <p class="p">技術管理<br>
-              剛躺上床的那一刻會軟爛</p>
+        <div id="row-2">
+          <div id="row-2-1">
+            <div class="profile-box">
+              <img src="../img/team-cheng.png" class="profile-pic" alt="鄭致彥">
+              <h3>鄭致彥</h3>
+              <p>Unity互動/網頁前端<br>
+                剛躺上床的那一刻會軟爛</p>
+            </div>
+            <div class="profile-box">
+              <img src="../img/team-lai.png" class="profile-pic" alt="戴彤恩">
+              <h3>戴彤恩</h3>
+              <p>劇情設計、動畫製作<br>
+                開會超過兩小時的時候會軟爛</p>
+            </div>
           </div>
-          <div id="member-05" class="box">
-            <img src="../img/team-lai.png" alt="戴彤恩">
-            <h3 class="h3">戴彤恩</h3>
-            <p class="p">動畫設計<br>
-              開會超過兩小時的時候會軟爛</p>
-          </div>
-          <div id="member-06" class="box">
-            <img src="../img/team-hsu.png" alt="徐晨星">
-            <h3 class="h3">徐晨星</h3>
-            <p class="p">視覺設計<br>
-              被催圖稿的時候會軟爛</p>
-          </div>
-          <div id="member-07" class="box">
-            <img src="../img/team-lin.png" alt="林岳柔">
-            <h3 class="h3">林岳柔</h3>
-            <p class="p">網頁程式設計<br>
-              肚子八點五分飽的時候會軟爛</p>
+          <div id="row-2-2">
+            <div class="profile-box">
+              <img src="../img/team-hsu.png" class="profile-pic" alt="徐晨星">
+              <h3>徐晨星</h3>
+              <p>視覺設計<br>
+                被催圖稿的時候會軟爛</p>
+            </div>
+            <div class="profile-box">
+              <img src="../img/team-lin.png" class="profile-pic" alt="林岳柔">
+              <h3>林岳柔</h3>
+              <p>網頁設計/網誌撰寫<br>
+                肚子八點五分飽的時候會軟爛</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <!-- Footer-->
     <footer>
-      <div id="footer-container">
-        <h2>展 覽 資 訊</h3>
-        <p>國立政治大學數位內容與科技學程第十屆畢展<br>
-          展期：2019/6/3 ~ 6/6<br>
-          地點：政治大學達賢圖書館2F<br></p>
-          <a class="social-links link" href="#"><img src="../img/facebook.png" style="width: 32px; height: 32px;" alt="facebook icon"></a>
-          <a class="social-links link" target="_blank" href="https://medium.com/@nccudcthangee"><img src="../img/medium.png" style="width: 32px; height: 28px;" alt="medium icon"></a>
-          <a class="social-links link" href="#">Line貼圖</a>
-        </div>
+        <div class="footer-title">展 覽 資 訊</div>
+        <div class="footer-text">國立政治大學數位內容與科技學程第十屆畢展<br>
+          展期：2019/5/31 ~ 6/4<br>
+          地點：政治大學數位藝術中心（藝文中心2F）<br></div>
+          <a class="link" target="_blank" href="https://www.facebook.com/NCCUDCT10th/"><img src="../img/facebook.png" class="social-links" alt="facebook icon"></a>
+          <a class="link" target="_blank" href="https://medium.com/@nccudcthangee"><img src="../img/medium.png" class="social-links" alt="medium icon"></a>
+          <a class="link" target="_blank" href="https://line.me/S/sticker/7286517"><img src="../img/line.png" class="social-links" alt="line icon"></a>
     </footer>
   </body>
 </html>
