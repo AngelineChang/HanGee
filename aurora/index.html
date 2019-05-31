@@ -78,8 +78,8 @@
           </div>
           <div class="snapshot">
             <a href="#" class="link"><img src="../10.png" id="5"></a>
-            <a href="#" class="link snapshot-title">5</a> -->
-          </div>
+            <a href="#" class="link snapshot-title">5</a>
+          </div>-->
 
         </section>
         <section id="load-btn">
@@ -111,30 +111,41 @@
   firebase.initializeApp(config);
 
   $(document).ready(function(){
+
       //Create a root reference
-      let imgNum = 200;
-      let counter = 0;
+      let imgNum = 201;
+      let i = 1;
+      let j = 1;
+      let funcs = [];
+
       let storageRef = firebase.storage().ref();
-      for (var i = 0; i < imgNum; i++) {
-        console.log(counter);
-        downloadURL(counter);
-        counter++;
-      }
-
       function downloadURL(counter) {
-        storageRef.child(`images/${counter}.png`).getDownloadURL().then(function(url) {
-            console.log(`${counter} / 找到檔案: ${counter}.png / ${url}`);
-            $( "#aurora-pics" ).append(
-              '<div class="snapshot"><a href="' + counter + '.html" class="link"><img src="' + url + ' id="' + counter +'"></a><a href="' + counter + '.html" class="link snapshot-title">' + counter + '</a></div>'
-            );
-            console.log(`append ${counter}.png`);
-        }).catch(function(error) {
-            console.log(`${counter}.png error`);
-        });
+        return function() {
+          storageRef.child(`images/${counter}.png`).getDownloadURL().then(function(url) {
+              console.log(`${counter} / 找到檔案: ${counter}.png / ${url}`);
+              $( "#aurora-pics" ).append(
+                '<div class="snapshot"><a href="' + counter + '.html" class="link"><img src="' + url + ' id="' + counter +'"></a><a href="' + counter + '.html" class="link snapshot-title">' + counter + '</a></div>'
+              );
+              console.log(`append ${counter}.png`);
+              console.log(counter);
+          }).catch(function(error) {
+              console.log(`${counter}.png error`);
+          });
+        }
+
+      }
+
+      for ( i = 1; i < imgNum; i++) {
+        funcs[i] = downloadURL(i);
+        console.log(i);
+      }
+
+      for ( j = 1; j < imgNum; j++) {
+        funcs[j]();
+        console.log(j);
       }
 
 
-      // let imgRef = storageRef.child(`images/${counter}.png`);
 
 
   });
