@@ -54,7 +54,8 @@
           <img src="" id="img-1"><!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
         </div>
         <div id="aurora-sing-below" class="box">
-            <button class="btn-text btn" type="button" name="button" onclick="downloadImage()">下載圖片</button>
+            <a href="" id="downloadImgBtn" target="_blank"><button class="btn-text btn" type="button" name="button" onclick="downloadImage()">下載圖片</button></a>
+            <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
             <a target="_blank" id="fb-link-1" href="" class="fb-xfbml-parse-ignore"><button class="btn-text btn" type="button" name="button">分享至Facebook</button></a>
         </div>
       </div>
@@ -96,14 +97,8 @@
 
     function downloadImage(){
       storageRef.child(`images/1.png`).getDownloadURL().then(function(url) {//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      console.log("button clicked");
-      var xhr = new XMLHttpRequest();
-        xhr.responseType = 'blob';
-        xhr.onload = function(event) {
-          var blob = xhr.response;
-        };
-        xhr.open('GET', url);
-        xhr.send();
+        var imgBtn = document.getElementById('downloadImgBtn');//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        imgBtn.href = url;
       }).catch(function(error) {
           console.log(`downloadImage error`);
       });
@@ -112,6 +107,6 @@
 
     var fbLink = document.getElementById('fb-link-1');//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     fbLink.href = "https://www.facebook.com/sharer/sharer.php?u=" +location.href + "&src=sdkpreparse";
-    
+
   </script>
 </html>
