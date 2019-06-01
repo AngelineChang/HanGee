@@ -51,15 +51,13 @@
     <main>
       <div id="aurora-container">
         <!--Search/Filter Area-->
-        
         <section id="search">
-          <!--<form id="searchbar">
+          <form id="searchbar">
             <label for="search"></label>
             <input type="search" id="search" name="search" placeholder="輸入極光畫作編號">
             <input type="submit" name="submit" value="搜尋">
-          </form> -->
+          </form>
         </section>
-        
         <!--Aurora Pictures-->
         <section id="aurora-pics">
           <!-- <div class="snapshot">
@@ -85,7 +83,7 @@
 
         </section>
         <section id="load-btn">
-          <!-- <button class="btn-text btn" type="button" name="button">載入更多</button> -->
+          <button class="btn-text btn" type="button" name="button">載入更多</button>
         </section>
       </main>
     </div>
@@ -99,6 +97,8 @@
           <a class="link" target="_blank" href="https://medium.com/@nccudcthangee"><img src="../img/medium.png" class="social-links" alt="medium icon"></a>
           <a class="link" target="_blank" href="https://line.me/S/sticker/7286517"><img src="../img/line.png" class="social-links" alt="line icon"></a>
     </footer>
+    <canvas id="canvas"></canvas>
+    <script src="../javascripts/star.js"></script>
   </body>
   <script type="text/javascript">
   // Initialize Firebase
@@ -118,7 +118,7 @@
       let imgNum = 201;
       let i = 1;
       let j = 1;
-      let funcs = [];
+      let funcs = [ ];
 
       let storageRef = firebase.storage().ref();
       function downloadURL(counter) {
@@ -144,6 +144,7 @@
 
       for ( j = 1; j < imgNum; j++) {
         funcs[j]();
+        console.log(funcs[j]);
         console.log(j);
       }
 
